@@ -1,0 +1,158 @@
+/* App.css */
+
+.app-container {
+  text-align: center;
+  background: linear-gradient(135deg, #2b2d42, #4a5568, #8d99ae);
+  min-height: 100vh;
+  color: #edf2f4; 
+  padding: 20px;
+  background-attachment: fixed; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+.app-title {
+  font-size: 3rem;
+  color: #ef233c; 
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  letter-spacing: 2px; 
+  animation: fade-in 1.5s ease-out;
+}
+
+.flight-form {
+  background: rgba(61, 64, 91, 0.8); 
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: inline-block;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  animation: slide-up 1.5s ease-out;
+}
+
+.input-field {
+  display: block;
+  width: 90%;
+  margin: 12px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2b2d42;
+  background-color: #edf2f4; 
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border: 1px solid #ef233c;
+  background-color: #f8f9fa; 
+  transform: scale(1.02); 
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #ef233c, #d90429);
+  color: #edf2f4;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.flight-list-title {
+  font-size: 2rem;
+  color: #edf2f4;
+  margin-top: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  animation: fade-in 1.5s ease-out;
+}
+
+.flight-item {
+  background: rgba(237, 242, 244, 0.9);
+  color: #2b2d42;
+  padding: 20px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flight-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.flight-details p {
+  margin: 6px 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.edit-button, .delete-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #8d99ae; 
+  color: #edf2f4;
+}
+
+.edit-button:hover {
+  background-color: #6d7886; 
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background: linear-gradient(135deg, #ef233c, #d90429); 
+  color: #edf2f4;
+}
+
+.delete-button:hover {
+  transform: translateY(-2px);
+  background: #b81f27; 
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
